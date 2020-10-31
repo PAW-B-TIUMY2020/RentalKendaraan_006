@@ -33,8 +33,22 @@
                     <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
+                    <li><a class="dropdown-menu-down">Daftar Rental
+                            <div class="dropdown-menu-down">
+                                <a asp-area="" asp-controller="Customers" asp-action="index">Customer</a>
+                                <a asp-area="" asp-controller="Genders" asp-action="index">Gender</a>
+                                <a asp-area="" asp-controller="Jaminans" asp-action="index">Jaminan</a>
+                                <a asp-area="" asp-controller="JenisKendaraans" asp-action="index">JenisKendaraan</a>
+                                <a asp-area="" asp-controller="Kendaraans" asp-action="index">Kendaraan</a>
+                                <a asp-area="" asp-controller="KondisiKendaraans" asp-action="index">KondisiKendaraan</a>
+                                <a asp-area="" asp-controller="Peminjamen" asp-action="index">Peminjaman</a>
+                                <a asp-area="" asp-controller="Pengembalians" asp-action="index">Pengembalian</a>
+                            </div></a>
+
+                    </li>
                 </ul>
             </div>
+            <div class="dropdown dropdown-menu"></div>
         </div>
     </nav>
 
