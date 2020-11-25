@@ -9,9 +9,24 @@
 <p>
     <a asp-action="Create">Create New</a>
 </p>
+
+
+@using (Html.BeginForm("index", "Kendaraan", FormMethod.Get))
+{
+<p>
+    Ketersediaan: @Html.DropDownList("ktsd", "Pilih Ketersediaan")
+    cari data : @Html.TextBox("searchString")
+    <input type="submit" value="filter" />
+</p>
+}
+
+
 <table class="table">
     <thead>
         <tr>
+            <th>
+                @Html.DisplayName("Nama Kendaraan")
+            </th>
             <th>
                 @Html.DisplayNameFor(model => model.NamaKendaraan)
             </th>
